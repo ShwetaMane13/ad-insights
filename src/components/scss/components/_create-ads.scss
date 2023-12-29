@@ -1,0 +1,56 @@
+.create-ads {
+  &__container {
+    display: grid;
+    grid-template-rows: 4rem 58rem;
+    border: 2px solid #ececec;
+    margin: 2rem;
+  }
+
+  &__heading {
+    background-color: #ececec;
+    display: grid;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__body {
+    display: grid;
+    align-items: center;
+    position: relative;
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: 35rem 35rem;
+    height: 40rem;
+    margin: auto;
+    grid-gap: 2rem;
+  }
+
+  &__button {
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    width: 12rem;
+    height: 4rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: 0.5rem;
+    border: none;
+
+    &-disabled {
+      opacity: 0.5;
+      position: absolute;
+      right: 3rem;
+      bottom: 2rem;
+      width: 12rem;
+      height: 4rem;
+      color: #fff;
+      background-color: blue;
+      border-radius: 0.5rem;
+      border: none;
+    }
+  }
+}

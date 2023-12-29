@@ -1,0 +1,12 @@
+.ad-insights {
+  &__header {
+    border: 1px solid #ececec;
+    background-color: #ececec;
+    display: grid;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    grid-template-columns: 50rem max-content;
+  }
+}

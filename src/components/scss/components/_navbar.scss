@@ -1,0 +1,22 @@
+.navbar{
+    border: 1px solid #f3f3f3;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    &__app-logo{
+        display: grid;
+        align-items: center;
+        padding-left: 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__options{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+}

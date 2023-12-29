@@ -1,0 +1,22 @@
+.ad-insights-right {
+  padding: 5rem 0rem;
+  &__container {
+    border: 1px solid #ececec;
+    width: 70rem;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 4rem 36rem;
+    position: relative;
+  }
+
+  &__switch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+}
+
+.doughnutchart {
+  height: 36rem;
+}

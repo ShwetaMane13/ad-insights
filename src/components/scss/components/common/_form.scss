@@ -1,0 +1,141 @@
+.form {
+  &-container {
+    border: 1px solid #ececec;
+    height: 84vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-rows: 4rem max-content 3rem;
+  }
+
+  &-heading {
+    border: 1px solid #ececec;
+    background-color: #ececec;
+    display: grid;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &-navigation {
+    // border: 1px solid black;
+  }
+
+  &-body {
+    min-height: 55rem;
+    display: grid;
+    grid-template-rows: repeat(3, 32.5%);
+
+    &__section-01 {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      &-left {
+        display: grid;
+        grid-template-rows: repeat(2, 45%);
+        grid-gap: 1rem;
+        padding: 1rem;
+      }
+
+      &-right {
+        display: grid;
+        grid-template-rows: 20% 72%;
+        padding: 1rem;
+      }
+    }
+
+    &__section-02 {
+      display: grid;
+      grid-template-rows: 49% 49%;
+
+      &-top {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 3rem;
+        padding: 1rem;
+      }
+
+      &-bottom {
+        display: grid;
+        padding: 0rem 1rem 1rem 1rem;
+      }
+    }
+
+    &__section-03 {
+      display: grid;
+      grid-template-rows: 49% 49%;
+
+      &-top {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        grid-gap: 3rem;
+        padding: 1rem;
+      }
+
+      &-bottom {
+        display: grid;
+        padding: 0rem 1rem 1rem 1rem;
+      }
+    }
+  }
+
+  &__input {
+    display: grid;
+    grid-gap: 0.5rem;
+
+    &-field {
+      height: 2rem;
+      border: 1px solid #a9a9a9;
+      padding: 1rem;
+    }
+
+    &-textarea {
+      border: 1px solid #a9a9a9;
+      padding: 1rem;
+    }
+
+    &-heading {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: #3c4142;
+    }
+  }
+
+  &__button {
+    &-back {
+      position: absolute;
+      right: 17rem;
+      bottom: 4.2%;
+      width: 12rem;
+      height: 4rem;
+      color: #000;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      border: none;
+      border: 1px solid black;
+    }
+
+    &-submit {
+      position: absolute;
+      right: 3rem;
+      bottom: 4.2%;
+      width: 12rem;
+      height: 4rem;
+      color: #fff;
+      background-color: blue;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+input::placeholder {
+  color: #3c4142;
+  opacity: 40%;
+  font-size: 1.3rem;
+}
+
+textarea::placeholder {
+  color: #3c4142;
+  opacity: 40%;
+  font-size: 1.3rem;
+}

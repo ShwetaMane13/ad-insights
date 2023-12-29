@@ -1,0 +1,11 @@
+.ad-insights-left {
+  padding: 5rem 0rem;
+  &__container {
+    border: 1px solid #ececec;
+    width: 70rem;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 4rem max-content;
+    position: relative;
+  }
+}

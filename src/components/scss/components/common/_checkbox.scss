@@ -1,0 +1,25 @@
+.checkbox {
+  &-container {
+    border: 1px solid #3c4142;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 2rem 95%;
+    padding: 0.5rem;
+    align-items: flex-end;
+    background-color: #fafafa;
+  }
+
+  &-label {
+    color: #fff;
+  }
+
+  &-text {
+    border: 1px solid #3c4142;
+    background-color: #ececec;
+    border-radius: 1rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
