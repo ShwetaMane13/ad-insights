@@ -1,22 +1,27 @@
-.navbar{
-    border: 1px solid #f3f3f3;
-    display: grid;
-    grid-template-columns: 70% 30%;
+.navbar {
+  display: flex;
+  // flex: 1;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  padding: 0 2rem;
+  border: 1px solid #f3f3f3;
+  background-color: #fff;
+  text-transform: uppercase;
+  height: 8rem;
+  box-shadow: 0 0.5rem 0.5rem 0 lightgray;
 
-    &__app-logo{
-        display: grid;
-        align-items: center;
-        padding-left: 2rem;
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
+  &__app-logo {
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 
-    &__options{
-        display: grid;
-        grid-template-columns: max-content max-content;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 2.5rem;
-        cursor: pointer;
-    }
+  &__options {
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
 }

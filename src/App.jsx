@@ -3,7 +3,7 @@ import "../src/components/scss/pages/_main.scss";
 
 export default function App() {
   return (
-    <div>
+    <div style={{display: "flex", flex: 1, height: "100vh"}}>
       <MainRouter />
     </div>
   );

@@ -3,14 +3,12 @@ import AdInsightsRight from "./AdInsightsRight";
 
 const Dashboard = () => {
   return (
-    <section className="dashboard">
-      <section>
+    <div className="dashboard">
+      <div className="dashboard__adInsights-container">
         <AdInsightsLeft />
-      </section>
-      <section>
         <AdInsightsRight />
-      </section>
-    </section>
+      </div>
+    </div>
   );
 };
 

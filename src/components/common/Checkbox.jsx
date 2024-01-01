@@ -1,24 +1,23 @@
+import image from "../../assets/titles-lhs.png";
 const Checkbox = (props) => {
   const { text, state, handleCheckboxChange } = props;
   return (
-    <section
-      onClick={(e) => handleCheckboxChange(text, e.target.innerText)}
-      className="checkbox-container"
-    >
-      <label className="checkbox-label">
-        <input
-          type="checkbox"
-          checked={state}
-          onChange={(e) => handleCheckboxChange(text, e.target.checked)}
-        />
-        {text}
-      </label>
-      <section
-        className="checkbox-text"
-      >
-        <span>Create {text} Ad</span>
-      </section>
-    </section>
+    <div className="checkbox-container">
+      <input
+        className="checkbox"
+        type="checkbox"
+        checked={state}
+        onChange={() => handleCheckboxChange(text)}
+      />
+
+      <div className="image">
+        <img src={image} alt="" />
+      </div>
+      <div className="checkbox-text">
+        <label>Create</label>
+        <label className="checkbox-text__option">{text} Ad</label>
+      </div>
+    </div>
   );
 };
 

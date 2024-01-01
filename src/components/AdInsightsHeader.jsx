@@ -1,5 +1,9 @@
 const AdInsightsHeader = () => {
-  return <section className="ad-insights__header">Ad Insights</section>;
+  return (
+    <div className="ad-insights__header">
+      <span>Ad Insights</span>
+    </div>
+  );
 };
 
 export default AdInsightsHeader;

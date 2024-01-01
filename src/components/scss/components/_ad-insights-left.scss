@@ -1,11 +1,8 @@
 .ad-insights-left {
-  padding: 5rem 0rem;
-  &__container {
-    border: 1px solid #ececec;
-    width: 70rem;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 4rem max-content;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  border: $border-default;
+  border-radius: 0.4rem;
 }

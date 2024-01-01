@@ -7,10 +7,10 @@ const MainComponent = () => {
   const [viewDashBoard, setViewDashboard] = useState(true);
 
   return (
-    <section className="main__container">
+    <div className="main__container">
       <NavBar setViewDashboard={setViewDashboard} />
       <Body viewDashBoard={viewDashBoard} />
-    </section>
+    </div>
   );
 };
 

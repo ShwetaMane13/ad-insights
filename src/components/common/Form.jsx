@@ -1,26 +1,14 @@
 import Input from "./InputComponent";
 
+import { headingPlaceHolder, imageURLPlaceholder } from "../../constants/constants";
+
 const Form = (props) => {
-  const {
-    setShowForm,
-    mediaCheckbox,
-    setMediaCheckbox,
-    setTextCheckbox,
-  } = props;
+  const { setShowForm, mediaCheckbox, submitForm } = props;
+
   const toggleShowForm = () => {
     setShowForm(false);
   };
-
-  const handleSubmit = () => {
-    setShowForm(false);
-    setTextCheckbox(false);
-    setMediaCheckbox(false);
-  };
-
-  const headingPlaceHolder = "Add a heading that would make users interested";
-  const imageURLPlaceholder =
-    "Add the URL of the image you want to use for the ad";
-
+ 
   return (
     <section className="form-container">
       <section className="form-heading">Create text & media</section>
@@ -91,10 +79,16 @@ const Form = (props) => {
         </section>
       </section>
       <section className="form-navigation">
-        <button className="form__button-back" onClick={toggleShowForm}>
+        <button
+          className="form-navigation__button-back"
+          onClick={toggleShowForm}
+        >
           Back
         </button>
-        <button className="form__button-submit" onClick={() => handleSubmit()}>
+        <button
+          className="form-navigation__button-submit"
+          onClick={() => submitForm()}
+        >
           Submit
         </button>
       </section>

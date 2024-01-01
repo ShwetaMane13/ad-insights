@@ -1,129 +1,132 @@
 .form {
   &-container {
-    border: 1px solid #ececec;
-    height: 84vh;
-    margin: 2rem;
-    display: grid;
-    grid-template-rows: 4rem max-content 3rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: $border-default;
   }
 
   &-heading {
-    border: 1px solid #ececec;
-    background-color: #ececec;
-    display: grid;
+    display: flex;
     align-items: center;
-    padding-left: 2rem;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 1rem;
   }
 
   &-navigation {
-    // border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0 1rem;
+
+    &__button {
+      &-back {
+        width: 15rem;
+        height: 4rem;
+        color: #000;
+        background-color: #fff;
+        border-radius: 0.4rem;
+        border: $border-default;
+        cursor: pointer;
+        outline: none;
+      }
+
+      &-submit {
+        width: 15rem;
+        height: 4rem;
+        color: #fff;
+        background-color: #0096ff;
+        border: 1px solid #0096ff;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline: none;
+      }
+    }
   }
 
   &-body {
-    min-height: 55rem;
-    display: grid;
-    grid-template-rows: repeat(3, 32.5%);
+    display: flex;
+    flex-direction: column;
 
     &__section-01 {
-      display: grid;
-      grid-template-columns: 50% 50%;
+      display: flex;
 
       &-left {
-        display: grid;
-        grid-template-rows: repeat(2, 45%);
-        grid-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        row-gap: 1rem;
         padding: 1rem;
       }
 
       &-right {
-        display: grid;
-        grid-template-rows: 20% 72%;
+        flex: 1;
         padding: 1rem;
       }
     }
 
     &__section-02 {
-      display: grid;
-      grid-template-rows: 49% 49%;
+      display: flex;
+      flex-direction: column;
 
       &-top {
-        display: grid;
-        grid-template-columns: repeat(3, 32%);
-        grid-gap: 3rem;
+        display: flex;
+        flex: 1;
+        gap: 3rem;
         padding: 1rem;
       }
 
       &-bottom {
-        display: grid;
+        display: flex;
+        flex: 1;
         padding: 0rem 1rem 1rem 1rem;
       }
     }
 
     &__section-03 {
-      display: grid;
-      grid-template-rows: 49% 49%;
+      display: flex;
+      flex-direction: column;
 
       &-top {
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
+        display: flex;
         grid-gap: 3rem;
         padding: 1rem;
       }
 
       &-bottom {
-        display: grid;
+        display: flex;
         padding: 0rem 1rem 1rem 1rem;
       }
     }
   }
 
   &__input {
-    display: grid;
-    grid-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
 
     &-field {
       height: 2rem;
-      border: 1px solid #a9a9a9;
+      border: $border-default;
       padding: 1rem;
+      border-radius: 0.5rem;
     }
 
     &-textarea {
-      border: 1px solid #a9a9a9;
+      flex: 1;
+      border: $border-default;
+      border-radius: 0.5rem;
       padding: 1rem;
     }
 
     &-heading {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 500;
       color: #3c4142;
-    }
-  }
-
-  &__button {
-    &-back {
-      position: absolute;
-      right: 17rem;
-      bottom: 4.2%;
-      width: 12rem;
-      height: 4rem;
-      color: #000;
-      background-color: #fff;
-      border-radius: 0.5rem;
-      border: none;
-      border: 1px solid black;
-    }
-
-    &-submit {
-      position: absolute;
-      right: 3rem;
-      bottom: 4.2%;
-      width: 12rem;
-      height: 4rem;
-      color: #fff;
-      background-color: blue;
-      border-radius: 0.5rem;
     }
   }
 }

@@ -11,7 +11,7 @@ import {
   TableSortLabel,
 } from "@mui/material";
 
-const EnhancedTable = (props) => {
+const AdInsightsTable = (props) => {
   const { data, headCells, total } = props;
   const [order, setOrder] = useState("asc");
   const [orderBy, setOrderBy] = useState(headCells[0].id);
@@ -52,6 +52,7 @@ const EnhancedTable = (props) => {
             {headCells.map((headCell) => (
               <TableCell
                 key={headCell.id}
+                style={headCell.style}
                 sortDirection={orderBy === headCell.id ? order : false}
               >
                 <TableSortLabel
@@ -68,21 +69,31 @@ const EnhancedTable = (props) => {
         <TableBody>
           {stableSort(data, getComparator(order, orderBy)).map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.Campaigns ? row.Campaigns : row.Group}</TableCell>
-              <TableCell>{row.Clicks}</TableCell>
-              <TableCell>USD {row.Cost}</TableCell>
-              <TableCell>{row.Conversions}</TableCell>
-              <TableCell>USD {row.Revenue}</TableCell>
+              <TableCell style={headCells[0].style}>
+                {row.Campaigns ? row.Campaigns : row.Group}
+              </TableCell>
+              <TableCell style={headCells[1].style}>{row.Clicks}</TableCell>
+              <TableCell style={headCells[2].style}>USD {row.Cost}</TableCell>
+              <TableCell style={headCells[3].style}>
+                {row.Conversions}
+              </TableCell>
+              <TableCell style={headCells[4].style}>
+                USD {row.Revenue}
+              </TableCell>
             </TableRow>
           ))}
-          <TableRow style={{ backgroundColor: "#ececec" }}>
-            <TableCell>
+          <TableRow style={{ backgroundColor: "#fafafa" }}>
+            <TableCell style={headCells[0].style}>
               {total.Campaigns ? total.Campaigns : total.Group}
             </TableCell>
-            <TableCell>{total.Clicks}</TableCell>
-            <TableCell>USD {total.Cost}</TableCell>
-            <TableCell>{total.Conversions}</TableCell>
-            <TableCell>USD {total.Revenue}</TableCell>
+            <TableCell style={headCells[1].style}>{total.Clicks}</TableCell>
+            <TableCell style={headCells[2].style}>USD {total.Cost}</TableCell>
+            <TableCell style={headCells[3].style}>
+              {total.Conversions}
+            </TableCell>
+            <TableCell style={headCells[4].style}>
+              USD {total.Revenue}
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
@@ -90,4 +101,4 @@ const EnhancedTable = (props) => {
   );
 };
 
-export default EnhancedTable;
+export default AdInsightsTable;

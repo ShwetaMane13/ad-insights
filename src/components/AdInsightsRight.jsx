@@ -3,7 +3,7 @@ import React, { useMemo, useState } from "react";
 import Switch from "@mui/material/Switch";
 
 // import AdInsightsHeader from "./AdInsightsHeader";
-import EnhancedTable from "./common/Table";
+import EnhancedTable from "./common/AdInsightsTable";
 import DoughnutChart from "./DoughnutChart";
 import Dropdown from "./common/Dropdown";
 
@@ -29,43 +29,40 @@ const AdInsightsRight = () => {
   };
 
   return (
-    <>
-      <section className="ad-insights-right">
-        <section className="ad-insights-right__container">
-          {/* <AdInsightsHeader /> */}
-          <section className="ad-insights__header">
-            <span>Ad Insights</span>
-            {toggle ? null : (
-              <Dropdown
-                selected={selected}
-                setSelected={setSelected}
-                options={options}
-              />
-            )}
-          </section>
+    <div className="ad-insights-right">
+      <div className="ad-insights__header">
+        <span>Ad Insights</span>
+        {toggle ? null : (
+          <div className="ad-insights__header-dropdown">
+            <Dropdown
+              selected={selected}
+              setSelected={setSelected}
+              options={options}
+            />
+          </div>
+        )}
+      </div>
 
-          <section>
-            {toggle ? (
-              <EnhancedTable
-                headCells={rightTableHeadCells}
-                data={rightTableData}
-                total={rightTableTotal}
-              />
-            ) : (
-              <DoughnutChart data={data} />
-            )}
-            <section className="ad-insights-right__switch">
-              <Switch
-                checked={toggle}
-                onChange={handleToggle}
-                inputProps={{ "aria-label": "controlled" }}
-                size="medium"
-              />
-            </section>
-          </section>
-        </section>
-      </section>
-    </>
+      <div className="ad-insights-right__body">
+        {toggle ? (
+          <EnhancedTable
+            headCells={rightTableHeadCells}
+            data={rightTableData}
+            total={rightTableTotal}
+          />
+        ) : (
+          <DoughnutChart data={data} />
+        )}
+        <div className="ad-insights-right__switch">
+          <Switch
+            checked={toggle}
+            onChange={handleToggle}
+            inputProps={{ "aria-label": "controlled" }}
+            size="medium"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

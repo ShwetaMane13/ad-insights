@@ -1,6 +1,6 @@
 import React from "react";
 
-import EnhancedTable from "./common/Table";
+import EnhancedTable from "./common/AdInsightsTable";
 import AdInsightsHeader from "./AdInsightsHeader";
 
 import {
@@ -11,16 +11,14 @@ import {
 
 const AdInsightsLeft = () => {
   return (
-    <section className="ad-insights-left">
-      <section className="ad-insights-left__container">
-        <AdInsightsHeader />
-        <EnhancedTable
-          headCells={leftTableHeadCells}
-          data={leftTableData}
-          total={leftTableTotal}
-        />
-      </section>
-    </section>
+    <div className="ad-insights-left">
+      <AdInsightsHeader />
+      <EnhancedTable
+        headCells={leftTableHeadCells}
+        data={leftTableData}
+        total={leftTableTotal}
+      />
+    </div>
   );
 };
 

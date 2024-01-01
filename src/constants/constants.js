@@ -1,9 +1,13 @@
 export const leftTableHeadCells = [
-  { id: "Campaigns", label: "Campaigns" },
-  { id: "Clicks", label: "Clicks" },
-  { id: "Cost", label: "Cost" },
-  { id: "Conversions", label: "Conversions" },
-  { id: "Revenue", label: "Revenue" },
+  {
+    id: "Campaigns",
+    label: "Campaigns",
+    style: { textAlign: "left", paddingLeft: "1.5rem" },
+  },
+  { id: "Clicks", label: "Clicks", style: { textAlign: "right" } },
+  { id: "Cost", label: "Cost", style: { textAlign: "right" } },
+  { id: "Conversions", label: "Conversions", style: { textAlign: "right" } },
+  { id: "Revenue", label: "Revenue", style: { textAlign: "right" } },
 ];
 
 export const leftTableData = [
@@ -66,17 +70,21 @@ export const leftTableTotal = {
 };
 
 export const rightTableHeadCells = [
-  { id: "Groups", label: "Groups" },
-  { id: "Clicks", label: "Clicks" },
-  { id: "Cost", label: "Cost" },
-  { id: "Conversions", label: "Conversions" },
-  { id: "Revenue", label: "Revenue" },
+  {
+    id: "Groups",
+    label: "Groups",
+    style: { textAlign: "left", paddingLeft: "1.5rem" },
+  },
+  { id: "Clicks", label: "Clicks", style: { textAlign: "right" } },
+  { id: "Cost", label: "Cost", style: { textAlign: "right" } },
+  { id: "Conversions", label: "Conversions", style: { textAlign: "right" } },
+  { id: "Revenue", label: "Revenue", style: { textAlign: "right" } },
 ];
 
 export const rightTableData = [
   {
     id: 1,
-    Group: "Men",
+    Group: "Male",
     Clicks: 348,
     Cost: 12528,
     Conversions: 42,
@@ -84,7 +92,7 @@ export const rightTableData = [
   },
   {
     id: 2,
-    Group: "Women",
+    Group: "Female",
     Clicks: 692,
     Cost: 24912,
     Conversions: 35,
@@ -109,3 +117,8 @@ export const rightTableTotal = {
 };
 
 export const options = ["Clicks", "Cost", "Conversions", "Revenue"];
+
+export const headingPlaceHolder =
+  "Add a heading that would make users interested";
+export const imageURLPlaceholder =
+  "Add the URL of the image you want to use for the ad";

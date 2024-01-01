@@ -1,12 +1,16 @@
 .checkbox {
+  height: 2rem;
+  width: 2rem;
+  margin: 1.2rem;
+  
   &-container {
-    border: 1px solid #3c4142;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: $border-default;
     border-radius: 1rem;
-    display: grid;
-    grid-template-rows: 2rem 95%;
     padding: 0.5rem;
-    align-items: flex-end;
-    background-color: #fafafa;
+    box-shadow: 0 0 10px 0 lightgray;
   }
 
   &-label {
@@ -14,12 +18,34 @@
   }
 
   &-text {
-    border: 1px solid #3c4142;
-    background-color: #ececec;
-    border-radius: 1rem;
-    height: 10rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: lightgray;
+    background-color: #fafafa;
+    border: $border-default;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 10rem; 
+
+    &__option{
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #000000;
+    }
   }
+}
+
+.image {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+img{
+  height: 25rem;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
 }

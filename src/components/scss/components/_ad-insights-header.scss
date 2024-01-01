@@ -1,12 +1,21 @@
 .ad-insights {
   &__header {
-    border: 1px solid #ececec;
-    background-color: #ececec;
-    display: grid;
+    display: flex;
     align-items: center;
-    padding-left: 2rem;
     font-size: 2rem;
-    font-weight: 600;
-    grid-template-columns: 50rem max-content;
+    font-weight: 400;
+    height: 5rem;
+    padding: 0 1.5rem;
+    background-color: #ffffff;
+    
+    > span{
+      flex: 1;
+    }
+
+    &-dropdown{
+      display: flex;
+      align-items: center;
+      height: 5rem;
+    }
   }
 }

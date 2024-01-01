@@ -1,22 +1,39 @@
 .ad-insights-right {
-  padding: 5rem 0rem;
-  &__container {
-    border: 1px solid #ececec;
-    width: 70rem;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 4rem 36rem;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  border: $border-default;
+  border-radius: 0.4rem;
+  height: 37rem;
+
+  &__body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: $border-default;
   }
 
   &__switch {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
     padding: 10px;
   }
+
 }
 
 .doughnutchart {
-  height: 36rem;
+  display: flex;
+  flex: 1;
+
+  &-legend {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 2rem;
+  }
 }
