@@ -1,0 +1,39 @@
+.ad-insights-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-start;
+  border: $border-default;
+  border-radius: 0.4rem;
+  height: 37rem;
+
+  &__body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: $border-default;
+  }
+
+  &__switch {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+}
+
+.doughnutchart {
+  display: flex;
+  flex: 1;
+
+  &-legend {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 2rem;
+  }
+}

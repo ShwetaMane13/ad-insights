@@ -1,0 +1,12 @@
+.dashboard {
+    display: flex;
+    flex: 1;
+
+    &__adInsights-container{
+      display: flex;
+      flex: 1;
+      align-self: flex-start;
+      gap: 3rem;
+    }
+  }
+  

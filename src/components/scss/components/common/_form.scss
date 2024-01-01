@@ -1,0 +1,144 @@
+.form {
+  &-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 1rem;
+    border: $border-default;
+  }
+
+  &-heading {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 1rem;
+  }
+
+  &-navigation {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0 1rem;
+
+    &__button {
+      &-back {
+        width: 15rem;
+        height: 4rem;
+        color: #000;
+        background-color: #fff;
+        border-radius: 0.4rem;
+        border: $border-default;
+        cursor: pointer;
+        outline: none;
+      }
+
+      &-submit {
+        width: 15rem;
+        height: 4rem;
+        color: #fff;
+        background-color: #0096ff;
+        border: 1px solid #0096ff;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+
+    &__section-01 {
+      display: flex;
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        row-gap: 1rem;
+        padding: 1rem;
+      }
+
+      &-right {
+        flex: 1;
+        padding: 1rem;
+      }
+    }
+
+    &__section-02 {
+      display: flex;
+      flex-direction: column;
+
+      &-top {
+        display: flex;
+        flex: 1;
+        gap: 3rem;
+        padding: 1rem;
+      }
+
+      &-bottom {
+        display: flex;
+        flex: 1;
+        padding: 0rem 1rem 1rem 1rem;
+      }
+    }
+
+    &__section-03 {
+      display: flex;
+      flex-direction: column;
+
+      &-top {
+        display: flex;
+        grid-gap: 3rem;
+        padding: 1rem;
+      }
+
+      &-bottom {
+        display: flex;
+        padding: 0rem 1rem 1rem 1rem;
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+
+    &-field {
+      height: 2rem;
+      border: $border-default;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    &-textarea {
+      flex: 1;
+      border: $border-default;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    &-heading {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #3c4142;
+    }
+  }
+}
+
+input::placeholder {
+  color: #3c4142;
+  opacity: 40%;
+  font-size: 1.3rem;
+}
+
+textarea::placeholder {
+  color: #3c4142;
+  opacity: 40%;
+  font-size: 1.3rem;
+}

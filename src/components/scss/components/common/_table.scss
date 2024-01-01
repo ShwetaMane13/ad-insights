@@ -1,0 +1,41 @@
+//table
+.MuiPaper-root {
+  &.MuiPaper-elevation {
+    &.MuiPaper-rounded {
+      &.MuiPaper-elevation1 {
+        &.MuiTableContainer-root {
+          &.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+            border: 0;
+            border-top: $border-default;
+            border-radius: 0 0 0.4rem 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Tableheading and header cells
+.MuiTableCell-root {
+  &.MuiTableCell-head {
+    &.MuiTableCell-sizeMedium {
+      &.css-1ygcj2i-MuiTableCell-root {
+        padding: 1.5rem 0 1rem 0;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+//Table body cells
+.MuiTableCell-root {
+  &.MuiTableCell-body {
+    &.MuiTableCell-sizeMedium {
+      &.css-1ex1afd-MuiTableCell-root {
+        padding: 1rem 2.5rem 1rem 0;
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

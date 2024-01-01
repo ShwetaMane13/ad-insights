@@ -1,0 +1,21 @@
+.ad-insights {
+  &__header {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 5rem;
+    padding: 0 1.5rem;
+    background-color: #ffffff;
+    
+    > span{
+      flex: 1;
+    }
+
+    &-dropdown{
+      display: flex;
+      align-items: center;
+      height: 5rem;
+    }
+  }
+}

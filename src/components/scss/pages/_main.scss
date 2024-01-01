@@ -1,0 +1,21 @@
+// importing from abstract
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+// importing from base
+@import "../base/base";
+
+//importing from components
+@import "../components/body";
+@import "../components/create-ads";
+@import "../components/dashboard";
+@import "../components/main-component";
+@import "../components/navbar";
+@import "../components/ad-insights-header";
+@import "../components/ad-insights-right";
+@import "../components/ad-insights-left";
+@import "../components/legend-item";
+@import "../components/common/table";
+@import "../components/common/dropdown";
+@import "../components/common/form";
+@import "../components/common/checkbox";
